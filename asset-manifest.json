@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/growcrops/static/css/main.5f8a2b93.chunk.css",
+    "main.js": "/growcrops/static/js/main.8be7fb3c.chunk.js",
+    "main.js.map": "/growcrops/static/js/main.8be7fb3c.chunk.js.map",
+    "runtime-main.js": "/growcrops/static/js/runtime-main.1a8338bc.js",
+    "runtime-main.js.map": "/growcrops/static/js/runtime-main.1a8338bc.js.map",
+    "static/css/2.e91b11d9.chunk.css": "/growcrops/static/css/2.e91b11d9.chunk.css",
+    "static/js/2.9f422340.chunk.js": "/growcrops/static/js/2.9f422340.chunk.js",
+    "static/js/2.9f422340.chunk.js.map": "/growcrops/static/js/2.9f422340.chunk.js.map",
+    "static/js/3.513e8a79.chunk.js": "/growcrops/static/js/3.513e8a79.chunk.js",
+    "static/js/3.513e8a79.chunk.js.map": "/growcrops/static/js/3.513e8a79.chunk.js.map",
+    "index.html": "/growcrops/index.html",
+    "static/css/2.e91b11d9.chunk.css.map": "/growcrops/static/css/2.e91b11d9.chunk.css.map",
+    "static/css/main.5f8a2b93.chunk.css.map": "/growcrops/static/css/main.5f8a2b93.chunk.css.map",
+    "static/js/2.9f422340.chunk.js.LICENSE.txt": "/growcrops/static/js/2.9f422340.chunk.js.LICENSE.txt",
+    "static/media/discord.676092c0.svg": "/growcrops/static/media/discord.676092c0.svg",
+    "static/media/ex.650481fe.png": "/growcrops/static/media/ex.650481fe.png",
+    "static/media/prcs.dd3aa9cf.png": "/growcrops/static/media/prcs.dd3aa9cf.png",
+    "static/media/twitter.88145f5a.svg": "/growcrops/static/media/twitter.88145f5a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1a8338bc.js",
+    "static/css/2.e91b11d9.chunk.css",
+    "static/js/2.9f422340.chunk.js",
+    "static/css/main.5f8a2b93.chunk.css",
+    "static/js/main.8be7fb3c.chunk.js"
+  ]
+}
