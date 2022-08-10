@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+/*font-family: 'VT323', monospace;*/
+
+/* Customize your main colors in :root variables */
+:root {
+  --main-background-color: #0c4113;
+  --card-background-color: #529a26;
+  --countdown-background-color: #433765;
+  --main-text-color: #f7f6f4;
+  --title-text-color: #61f039;
+  --main-color-bg: #17232a;
+}
+
+body {
+  background-color: var(--main-color-bg);
+  /* background: url("img/background.png"); */
+  background-size: cover;
+  font-family: "VT323", monospace;
+  font-size: 1.1em;
+}
+
+h2,
+p {
+  color: var(--main-text-color);
+}
+
+h3 {
+  font-weight: normal;
+}

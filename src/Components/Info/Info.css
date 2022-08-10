@@ -1,0 +1,13 @@
+.ISuper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 0rem;
+}
+
+.ISuper img {
+  width: 80%;
+  box-shadow: 0 0 20px black;
+  border: 3px solid var(--card-background-color);
+  border-radius: 15px;
+}
