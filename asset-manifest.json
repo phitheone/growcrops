@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.9f0131aa.chunk.css",
+    "main.css": "/static/css/main.447560fa.chunk.css",
     "main.js": "/static/js/main.4969bfad.chunk.js",
     "main.js.map": "/static/js/main.4969bfad.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0d2720e3.js",
@@ -12,7 +12,7 @@
     "static/js/3.513e8a79.chunk.js.map": "/static/js/3.513e8a79.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.e91b11d9.chunk.css.map": "/static/css/2.e91b11d9.chunk.css.map",
-    "static/css/main.9f0131aa.chunk.css.map": "/static/css/main.9f0131aa.chunk.css.map",
+    "static/css/main.447560fa.chunk.css.map": "/static/css/main.447560fa.chunk.css.map",
     "static/js/2.aab69428.chunk.js.LICENSE.txt": "/static/js/2.aab69428.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/cubes2.be80b83e.png",
     "static/media/discord.d7f04e19.svg": "/static/media/discord.d7f04e19.svg",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.0d2720e3.js",
     "static/css/2.e91b11d9.chunk.css",
     "static/js/2.aab69428.chunk.js",
-    "static/css/main.9f0131aa.chunk.css",
+    "static/css/main.447560fa.chunk.css",
     "static/js/main.4969bfad.chunk.js"
   ]
 }
