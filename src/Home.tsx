@@ -31,9 +31,12 @@ import {
 
 import Info from "./Components/Info";
 
-import discord from "./img/discord.svg";
-import twitter from "./img/twitter.svg";
-import heroimg from "./img/ex.png";
+import discord from "./img/ds.png";
+import twitter from "./img/tw.png";
+import heroimg from "./img/ex2.gif";
+import logo from "./img/lg.png";
+
+import "./home.css";
 
 const cluster = process.env.REACT_APP_SOLANA_NETWORK!.toString();
 const decimals = process.env.REACT_APP_SPL_TOKEN_TO_MINT_DECIMALS
@@ -44,17 +47,66 @@ const splTokenName = process.env.REACT_APP_SPL_TOKEN_TO_MINT_NAME
   : "TOKEN";
 
 const WalletContainer = styled.div`
+  position: fixed;
+  top: 0px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: right;
+  justify-content: space-between;
   align-items: center;
+  height: 140px;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 150;
+  border-bottom: solid white 4px;
 
   /* border: solid red 2px; */
 `;
 
+const LeftNav = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  margin-right: 40px;
+  margin-left: 40px;
+
+  /* border: solid green 2px; */
+`;
+
+const SocialsL = styled.img`
+  height: 140px;
+  margin-right: 15px;
+  margin-right: 40px;
+  margin-left: 40px;
+  transition: 0.3s;
+  cursor: pointer;
+
+  :hover {
+    transform: scale(1.1);
+  }
+`;
+
 const Socials = styled.img`
-  height: 40px;
+  height: 50px;
+  margin-right: 15px;
+  transition: 0.3s;
+
+  :hover {
+    transform: scale(1.1);
+    rotate: 7deg;
+  }
+`;
+
+const Floatingsocials = styled.div`
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  right: 40px;
+  bottom: 40px;
+  height: 130px;
   margin-right: 15px;
 `;
 
@@ -75,7 +127,7 @@ const WalletAmount = styled.div`
   font-weight: 500;
   line-height: 1.75;
   text-transform: uppercase;
-  border: 0;
+  border: solid white 3px;
   margin: 0;
   display: inline-flex;
   outline: 0;
@@ -95,6 +147,7 @@ const Wallet = styled.ul`
 
 const ConnectButton = styled(WalletMultiButton)`
   border-radius: 18px !important;
+  border: solid 3px white;
   padding: 6px 16px;
   background-color: var(--main-background-color);
   margin: 0 auto;
@@ -214,11 +267,8 @@ const SolExplorerLink = styled.a`
 
 const MainContainer = styled.div`
   display: flex;
+  height: 100vh;
   flex-direction: column;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-right: 4%;
-  margin-left: 4%;
   text-align: center;
   justify-content: center;
 
@@ -226,7 +276,7 @@ const MainContainer = styled.div`
 `;
 
 const MintContainer = styled.div`
-  margin-top: 10rem;
+  margin-top: 5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -782,28 +832,32 @@ const Home = (props: HomeProps) => {
     <main>
       <MainContainer>
         <WalletContainer>
-          <a href="https://twitter.com" target="_blank">
-            <Socials src={twitter} />
-          </a>
-          <a href="https://discord.gg" target="_blank">
-            <Socials src={discord} />
-          </a>
-          <Wallet>
-            {wallet ? (
-              <WalletAmount>
-                {(balance || 0).toLocaleString()} SOL
-                <ConnectButton />
-              </WalletAmount>
-            ) : (
-              <ConnectButton>Connect Wallet</ConnectButton>
-            )}
-          </Wallet>
+          <div>
+            <SocialsL src={logo} />
+          </div>
+          <LeftNav>
+            <Floatingsocials>
+              <a href="https://twitter.com/BabySocialClub" target="_blank">
+                <Socials src={twitter} />
+              </a>
+              <a href="https://discord.gg/RrCa7QWJgx" target="_blank">
+                <Socials src={discord} />
+              </a>
+            </Floatingsocials>
+            <Wallet>
+              {wallet ? (
+                <WalletAmount>
+                  {(balance || 0).toLocaleString()} SOL
+                  <ConnectButton />
+                </WalletAmount>
+              ) : (
+                <ConnectButton>Connect Wallet</ConnectButton>
+              )}
+            </Wallet>
+          </LeftNav>
         </WalletContainer>
         <br />
         <MintContainer>
-          <ImgContainer>
-            <HeroImg src={heroimg} />
-          </ImgContainer>
           <DesContainer>
             <NFT elevation={3}>
               <br />
@@ -846,6 +900,8 @@ const Home = (props: HomeProps) => {
               )}
               {wallet && isActive && (
                 <h3>
+                  <span className="MsgSpan">Get your Baby y00ts now!</span>
+                  <br />
                   TOTAL MINTED : {itemsRedeemed} / {itemsAvailable}
                 </h3>
               )}
@@ -940,7 +996,6 @@ const Home = (props: HomeProps) => {
           {alertState.message}
         </Alert>
       </Snackbar>
-      <Info />
     </main>
   );
 };

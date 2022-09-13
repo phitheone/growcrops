@@ -1,0 +1,5 @@
+.MsgSpan {
+  color: var(--title-text-color);
+  text-shadow: 0 0 10px black;
+  font-size: 30px;
+}

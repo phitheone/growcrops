@@ -1,23 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 
-/*font-family: 'VT323', monospace;*/
+/* font-family: 'Fira Sans', sans-serif; */
 
 /* Customize your main colors in :root variables */
 :root {
-  --main-background-color: #0c4113;
-  --card-background-color: #529a26;
+  --main-background-color: #000000;
+  --card-background-color: rgba(0, 0, 0, 0.5);
   --countdown-background-color: #433765;
-  --main-text-color: #f7f6f4;
-  --title-text-color: #61f039;
+  --main-text-color: #d94242;
+  --title-text-color: #ffffff;
   --main-color-bg: #17232a;
 }
 
 body {
   background-color: var(--main-color-bg);
-  /* background: url("img/background.png"); */
+  background: url("img/cubes2.png");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
   font-family: "VT323", monospace;
   font-size: 1.1em;
+  background-color: #000000;
 }
 
 h2,
